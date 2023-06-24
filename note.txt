@@ -1,0 +1,124 @@
+
+Angular Services
+-----------------
+
+A file Used to keep data and methods that can access by and Component in that module
+
+For craeting a service file
+
+        ng g s serviceName 
+
+
+
+
+Server
+------
+
+    1.  For craeting a Server u need to create a new folder name as bank_server then open the created folder then open terminal in that folder
+
+        -   npm init , yes , yes etc.... is this ok? (yes) 
+
+    2.  then install express
+
+        -   npm i express   
+
+    3.  then create     - index.js
+
+        for creating a Server
+
+            *-  import express 
+            *-  server using express
+            *-  set port to run server
+            
+                
+
+
+Nodemon
+-------
+
+    we can nodemon instead of node for automatic recomblelation
+
+
+
+
+basis shell commands in mangodb
+-------------------------------
+
+* to list DataBases
+    -   show dbs
+
+* to open s DataBase
+    - use databaseName
+
+* to list the Collections inside a DataBase
+    - show collections
+
+* to see the datas inside a Collections
+    - databaseName.collectionsName.find()       ***     (important)
+
+* to access any single data from collection
+    - databaseName.collectionsName.findOne({ key : value })     ***     (important)
+
+        eg =:   BankServer.users.findOne({ acno : 1000 })   =   Object/null
+
+
+* to delete any single data from collection
+    - databaseName.collectionsName.deleteOne({ key : value })      ****     (important) 
+
+* to access data according to a condition
+    - databaseName.collectionsName.find({key : { $condition}})
+
+        eg =:   BankServer.users.find({balance : {$gt : 4000}})      ****        (important)
+
+
+* to add a new data to collection
+    - insertOne({data})
+
+* to Update a new datas
+    - updateOne({data to update})
+
+
+
+
+
+
+
+server MongoDB integration
+--------------------------
+
+mongoose    -   library used to integrate mongodb with node Server
+connect()   -   method  ''
+
+
+json()      -   A method in express used to convert all incoming json datas
+                to JavaScript
+
+
+
+
+to connect Form FrontEnd To Server
+---------------------------------
+
+Front-End Server integration
+----------------------------
+
+cors    -   cross orgin resource sharing    :=  Library
+
+
+
+
+
+
+
+
+
+
+
+
+important Questions in interview
+---------------------------------
+
+features of mangodb
+difference bw mangodb & sql
+
+
